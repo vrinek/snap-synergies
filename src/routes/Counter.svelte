@@ -4,7 +4,7 @@
 	import { DataSet } from 'vis-data';
 
 	// create an array with nodes
-	var nodes = new DataSet([
+	const nodes = new DataSet([
 		{ id: 1, label: 'Node 1' },
 		{ id: 2, label: 'Node 2' },
 		{ id: 3, label: 'Node 3' },
@@ -13,7 +13,7 @@
 	]);
 
 	// create an array with edges
-	var edges = new DataSet([
+	const edges = new DataSet([
 		{ from: 1, to: 3 },
 		{ from: 1, to: 2 },
 		{ from: 2, to: 4 },
@@ -22,16 +22,15 @@
 	]);
 
 	// create a network
-	//var container = document.getElementById("mynetwork");
 	let container;
-	var data = {
+	const data = {
 		nodes: nodes,
 		edges: edges
 	};
-	var options = {};
+	const options = {};
 
 	onMount(() => {
-		var network = new Network(container, data, options);
+		new Network(container, data, options);
 	});
 </script>
 
