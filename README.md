@@ -1,10 +1,10 @@
 ## Developing
 
 ```bash
-nix-shell -p nodePackages_latest.vercel yarn --run $SHELL
+nix-shell -p nodePackages_latest.vercel nodePackages_latest.npm nodejs --run $SHELL
 
 # pull in all dependencies
-yarn
+npm update
 
 # run a dev server
 vercel dev
