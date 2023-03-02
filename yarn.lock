@@ -1737,6 +1737,16 @@ util-deprecate@^1.0.1:
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
 
+vis-data@^7.1.4:
+  version "7.1.4"
+  resolved "https://registry.yarnpkg.com/vis-data/-/vis-data-7.1.4.tgz#90e5e796a79e1901de14c0808fb32a1a0735c1dc"
+  integrity sha512-usy+ePX1XnArNvJ5BavQod7YRuGQE1pjFl+pu7IS6rCom2EBoG0o1ZzCqf3l5US6MW51kYkLR+efxRbnjxNl7w==
+
+vis-network@^9.1.4:
+  version "9.1.4"
+  resolved "https://registry.yarnpkg.com/vis-network/-/vis-network-9.1.4.tgz#202883557e62919dc5e8beb090a22b2ca5a086f4"
+  integrity sha512-B+BrPXkxu7AiqQpxVjjRpMBenVJvdB8y1D8J9NseXC8f/Z7U8dknFYZpcPFZzHh3bypj9/25GsycwE4p5my3dw==
+
 "vite@^3.0.0 || ^4.0.0", vite@^4.0.0:
   version "4.1.4"
   resolved "https://registry.yarnpkg.com/vite/-/vite-4.1.4.tgz#170d93bcff97e0ebc09764c053eebe130bfe6ca0"

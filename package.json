@@ -30,5 +30,9 @@
 		"vite": "^4.0.0",
 		"vitest": "^0.25.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"vis-data": "^7.1.4",
+		"vis-network": "^9.1.4"
+	}
 }
