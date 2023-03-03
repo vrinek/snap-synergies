@@ -38,7 +38,11 @@
 
 <style>
 	div {
-		width: 100%;
-		height: 400px;
+		border: 1px solid gray;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
 	}
 </style>
