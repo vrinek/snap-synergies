@@ -27,8 +27,6 @@
     const nodes = new DataSet(myCards)
     const edges = new DataSet(myRelations)
 
-    console.debug(nodes)
-
 	let container;
 	const data = {
 		nodes: nodes,
