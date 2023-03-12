@@ -5,10 +5,34 @@
 	import cards from './cards.js'
 	import relations from './relations.js'
 
+    const deck = ["Agent 13",
+                  "Mantis",
+                  "Quinjet",
+                  "The Collector",
+                  "Cable",
+                  "Invisible Woman",
+                  "Sentinel",
+                  "Moon Girl",
+                  "Omega Red",
+                  "White Queen",
+                  "Devil Dinosaur",
+                  "Leech"]
+    const myRelations = relations.filter(
+        relation => deck.includes(relation.from) || deck.includes(relation.to)
+    )
+    const myCards = cards.filter(
+        card => myRelations.map(r => r.from).includes(card.id) || myRelations.map(r => r.to).includes(card.id)
+    )
+
+    const nodes = new DataSet(myCards)
+    const edges = new DataSet(myRelations)
+
+    console.debug(nodes)
+
 	let container;
 	const data = {
-		nodes: new DataSet(cards),
-		edges: new DataSet(relations),
+		nodes: nodes,
+		edges: edges,
 	};
 	const options = {};
 
