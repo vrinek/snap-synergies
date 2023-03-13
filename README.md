@@ -23,4 +23,5 @@ nix-shell -p mprocs --run mprocs
 - [x] add prettier (or other formatter) to the toolchain
 - [ ] rename Counter component to something that makes sense
 - [ ] rename the repo
-- [ ] remove irrelevant header and footer
+- [x] remove irrelevant header and footer
+- [ ] remove irrelevant header links
