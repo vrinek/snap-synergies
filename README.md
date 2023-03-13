@@ -20,7 +20,7 @@ nix-shell -p mprocs --run mprocs
 
 - [x] visually differentiate deck cards from the rest
 - [ ] visually differentiate relations between deck cards and others
-- [ ] add prettier (or other formatter) to the toolchain
+- [x] add prettier (or other formatter) to the toolchain
 - [ ] rename Counter component to something that makes sense
 - [ ] rename the repo
 - [ ] remove irrelevant header and footer

@@ -1,3 +1,5 @@
 procs:
   devserver:
     shell: "nix-shell -p nodePackages_latest.vercel nodePackages_latest.yarn --run 'vercel dev'"
+  lint:
+    shell: 'nix-shell -p watchexec nodePackages_latest.npm nodejs --run ''watchexec -e svelte,js "npm run format"'''
