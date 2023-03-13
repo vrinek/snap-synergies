@@ -9,3 +9,7 @@ npm update
 # run a dev server
 vercel dev
 ```
+## TODO
+
+- [ ] visually differentiate deck cards from the rest
+- [ ] add prettier (or other formatter) to the toolchain
