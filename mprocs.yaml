@@ -1,0 +1,3 @@
+procs:
+  devserver:
+    shell: "nix-shell -p nodePackages_latest.vercel nodePackages_latest.yarn --run 'vercel dev'"

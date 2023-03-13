@@ -1,14 +1,21 @@
+## Prerequisites
+
+Get the [Nix package manager](https://nixos.org/download.html) installed.
+
 ## Developing
 
+### Pull in all dependencies
+
 ```bash
-nix-shell -p nodePackages_latest.vercel nodePackages_latest.npm nodejs --run $SHELL
-
-# pull in all dependencies
-npm update
-
-# run a dev server
-vercel dev
+nix-shell -p nodePackages_latest.npm nodejs --run "npm update"
 ```
+
+# Run a dev server
+
+```bash
+nix-shell -p mprocs --run mprocs
+```
+
 ## TODO
 
 - [x] visually differentiate deck cards from the rest
