@@ -13,12 +13,16 @@
     )
 
     const deck = deckCards.map(c => c.id)
+
     const myRelations = relations.filter(
         relation => deck.includes(relation.from) || deck.includes(relation.to)
     )
+
     const myCards = cards.filter(
         card => myRelations.map(r => r.from).includes(card.id) || myRelations.map(r => r.to).includes(card.id)
-    )
+    ).map(card => {
+        return {...card, opacity: (deck.includes(card.id) ? 1 : 0.5)}
+    })
 
     const nodes = new DataSet(myCards)
     const edges = new DataSet(myRelations)

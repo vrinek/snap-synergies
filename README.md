@@ -11,5 +11,5 @@ vercel dev
 ```
 ## TODO
 
-- [ ] visually differentiate deck cards from the rest
+- [x] visually differentiate deck cards from the rest
 - [ ] add prettier (or other formatter) to the toolchain
