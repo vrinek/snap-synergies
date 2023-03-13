@@ -14,9 +14,9 @@
 </section>
 
 <style>
-  section {
-    display: flex;
-    position: relative;
-    flex: 1;
-  }
+	section {
+		display: flex;
+		position: relative;
+		flex: 1;
+	}
 </style>
