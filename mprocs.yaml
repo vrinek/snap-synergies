@@ -1,5 +1,7 @@
 procs:
   devserver:
-    shell: "nix-shell -p nodePackages_latest.vercel nodePackages_latest.yarn --run 'vercel dev'"
+    cmd: ['npm', 'run', 'dev']
   lint:
-    shell: 'nix-shell -p watchexec nodePackages_latest.npm nodejs --run ''watchexec -e svelte,js "npm run format"'''
+    cmd: ['watchexec', '--exts', 'js,svelte,yaml', 'npm run format']
+  check:
+    cmd: ['npm', 'run', 'check:watch']
