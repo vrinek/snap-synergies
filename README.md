@@ -16,7 +16,7 @@ npm install
 # all node packages will be installed
 ```
 
-# Run a dev server
+## Run a dev server
 
 ```bash
 # when in `nix develop`
