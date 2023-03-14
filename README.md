@@ -2,18 +2,25 @@
 
 Get the [Nix package manager](https://nixos.org/download.html) installed.
 
+Enable flakes and the nix command [experimental features](https://github.com/Xe/site/blob/cedbd439f156cbc89de739a1d45d03a2ae8315f8/blog/nix-flakes-1-2022-02-21.markdown?plain=1#L81-L86).
+
 ## Developing
 
 ### Pull in all dependencies
 
 ```bash
-nix-shell -p nodePackages_latest.npm nodejs --run "npm update"
+nix develop
+# all system dependencies will be installed
+
+npm install
+# all node packages will be installed
 ```
 
 # Run a dev server
 
 ```bash
-nix-shell -p mprocs watchexec nodejs nodePackages_latest.npm --run mprocs
+# when in `nix develop`
+mprocs
 ```
 
 ## TODO
