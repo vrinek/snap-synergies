@@ -29,6 +29,6 @@ mprocs
 - [ ] visually differentiate relations between deck cards and others
 - [x] add prettier (or other formatter) to the toolchain
 - [ ] rename Counter component to something that makes sense
-- [ ] rename the repo
+- [x] rename the repo
 - [x] remove irrelevant header and footer
 - [ ] remove irrelevant header links
